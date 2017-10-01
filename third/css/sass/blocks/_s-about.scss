@@ -1,0 +1,18 @@
+.s-about {
+	height: 500px;
+}
+.s-about__wrapper {
+	@include container();
+}
+.s-about__header {
+	padding: 25px;
+}
+
+
+@media #{$tablet} {
+	
+}
+
+@media #{$desktop} {
+	
+}
