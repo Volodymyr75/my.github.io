@@ -22,7 +22,7 @@ body {
   overflow: hidden; }
 
 .page-header {
-  min-height: 560px; }
+  min-height: 480px; }
 
 .main-nav {
   z-index: 50;
