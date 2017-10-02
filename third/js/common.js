@@ -39,8 +39,11 @@ $(document).ready(function() {
 	});
 
 	$(".main-nav__items a").click(function() {
-		$(".main-nav__wrapper").fadeOut(600);
-		$(".main-nav__sandwich").toggleClass("active");
+		if(window.matchMedia('(max-width: 768px)').matches) {
+			$(".main-nav__wrapper").fadeOut(600);
+			$(".main-nav__sandwich").toggleClass("active");
+		}
+		
 		// $(".top_text").css("opacity", "1");
 	}).append("<span>");
 

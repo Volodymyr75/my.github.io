@@ -55,7 +55,11 @@
 		margin-top: 180px;
 		text-align: center;
 		animation-duration: .01s;
+		@media (orientation:landscape) {
+			margin-top: 80px;
+		}
 	}
+
 	.main-nav__item {
 		&:nth-child(1) a {
 			animation-delay: 0s;
@@ -103,8 +107,12 @@
 		@include clearfix();
 		
 	}
+	.main-nav__items {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 	.main-nav__item {
-		float: left;
+		// float: left;
 		margin-right: 32px;
 		line-height: 20px;
 		vertical-align: top;
