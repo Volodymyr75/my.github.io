@@ -18,24 +18,36 @@
 </head>
 <body>
 	<header class="page-header" data-parallax="scroll" data-image-src="img/bg.jpg" data-z-index="1">
-		<div class="page-header__logo"></div>
-			<nav class="main-nav">
-				<button class="main-nav__toggle" type="button">Открыть  меню
-					<span class="main-nav__sandwich">
-						<span class="main-nav__line-top"></span>
-						<span class="main-nav__line-middle"></span>
-						<span class="main-nav__line-bottom"></span>
-					</span>
-				</button>
-				<div class="main-nav__wrapper">
-					<ul class="main-nav__items">
-						<li class="main-nav__item main-nav__item--active"><a href="#about">О нас</a></li>
-						<li class="main-nav__item"><a href="#parents">Родители</a></li>
-						<li class="main-nav__item"><a href="#children">Дети</a></li>
-						<li class="main-nav__item"><a href="#contacts">Контакты</a></li>
-					</ul>
-				</div>
-			</nav>
+		
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button">Открыть  меню
+				<span class="main-nav__sandwich">
+					<span class="main-nav__line-top"></span>
+					<span class="main-nav__line-middle"></span>
+					<span class="main-nav__line-bottom"></span>
+				</span>
+			</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__items">
+					<li class="main-nav__item main-nav__item--active"><a href="#about">О нас</a></li>
+					<li class="main-nav__item"><a href="#parents">Родители</a></li>
+					<li class="main-nav__item"><a href="#children">Дети</a></li>
+					<li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+
+				</ul>
+			</div>
+		</nav>
+		<div class="page-header__wrapper">
+			<div class="page-header__logo">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/svg/cat_lady.svg">
+					<source media="(min-width: 768px)" srcset="img/svg/cats_in_love.svg">
+					<img src="img/svg/cat_lady.svg" width="200" height="150" alt="">
+				</picture>
+			</div>
+			<h1 class="page-header__tagline">Name of ...</h1>
+			</div>
+		
 	</header>
 	<section class="s-about">
 		<div class="s-about__wrapper">
