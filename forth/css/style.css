@@ -354,9 +354,9 @@ th {
   padding: 0; }
 
 body {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  font-family: "Raleway", sans-serif;
   color: #f7f4f1;
   font-style: normal;
   background-color: #292929; }
@@ -424,46 +424,81 @@ body {
   font-size: 12px;
   font-family: "Raleway", sans-serif;
   position: relative;
-  height: 60px;
   outline: none; }
 
-.s-about {
-  min-height: 200px; }
+.main-nav__social {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center; }
 
-.s-about__wrapper {
-  width: 320px;
-  margin: 0 auto;
+.social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .social-links svg {
+    width: 40px;
+    height: 40px; }
+
+.social-links__link {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  text-decoration: none; }
+
+.s-about {
+  min-height: 200px;
   margin-bottom: 50px; }
 
+.s-about__wrapper {
+  width: auto; }
+
 .s-about__header {
-  padding: 50px 0 30px; }
+  padding: 30px 0 20px; }
 
 .s-about__title {
   text-align: center; }
 
 .s-parents__wrapper {
-  width: 320px;
-  margin: 0 auto; }
+  width: auto; }
 
 .s-children__wrapper {
-  width: 320px;
-  margin: 0 auto; }
+  width: auto; }
+
+.s-contacts {
+  min-height: 200px;
+  margin-bottom: 50px; }
 
 .s-contacts__wrapper {
-  width: 320px;
-  margin: 0 auto; }
+  width: auto; }
+
+.s-contacts__header {
+  padding: 30px 0 20px; }
+
+.s-contacts__title {
+  text-align: center; }
 
 .main-footer__wrapper {
-  width: 320px;
-  margin: 0 auto; }
+  width: auto; }
 
 @media (min-width: 768px) {
+  .social-links {
+    display: -webkit-box;
+    display: flex; }
+  .social-links li {
+    display: -webkit-box;
+    display: flex;
+    margin: auto; }
   .main-nav {
     width: auto;
     margin: 0;
     background-color: #000; }
   .main-nav__wrapper {
-    width: auto; }
+    width: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
   .main-nav__items {
     display: -webkit-box;
     display: flex;
@@ -471,6 +506,8 @@ body {
     -webkit-box-direction: normal;
             flex-direction: row;
     flex-wrap: wrap;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
     justify-content: space-around; }
   .main-nav__item {
     margin-right: 32px;
@@ -479,7 +516,7 @@ body {
     .main-nav__item:last-child {
       margin-right: 0; }
   .main-nav__item a {
-    padding: 25px 20px;
+    padding: 20px 20px;
     font-size: 16px;
     position: relative; }
     .main-nav__item a:hover {
@@ -495,15 +532,25 @@ body {
   .main-nav__toggle {
     display: none; }
     .s-about__wrapper {
-      width: 640px; }
+      width: 84%;
+      max-width: 960px;
+      margin: 0 auto; }
     .s-parents__wrapper {
-      width: 640px; }
+      width: 84%;
+      max-width: 960px;
+      margin: 0 auto; }
     .s-children__wrapper {
-      width: 640px; }
+      width: 84%;
+      max-width: 960px;
+      margin: 0 auto; }
     .s-contacts__wrapper {
-      width: 640px; }
+      width: 84%;
+      max-width: 960px;
+      margin: 0 auto; }
     .main-footer__wrapper {
-      width: 640px; } }
+      width: 84%;
+      max-width: 960px;
+      margin: 0 auto; } }
 
 @media (min-width: 768px) and (min-width: 768px) {
     .main-nav__wrapper {
@@ -513,19 +560,14 @@ body {
 
 @media (min-width: 1200px) {
   .main-nav__toggle {
-    display: none; }
-    .s-about__wrapper {
-      width: 960px; }
-    .s-parents__wrapper {
-      width: 960px; }
-    .s-children__wrapper {
-      width: 960px; }
-    .s-contacts__wrapper {
-      width: 960px; }
-    .main-footer__wrapper {
-      width: 960px; } }
+    display: none; } }
 
 @media (max-width: 767px) {
+  .main-nav__social {
+    z-index: 100;
+    position: fixed;
+    left: 20px;
+    top: 20px; }
   .main-nav__wrapper {
     position: fixed;
     width: 100%;
@@ -554,6 +596,7 @@ body {
   .main-nav__item a {
     opacity: 0;
     position: relative;
+    height: 60px;
     outline: none; }
     .main-nav__item a span {
       display: block;
