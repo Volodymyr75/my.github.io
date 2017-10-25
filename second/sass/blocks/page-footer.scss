@@ -1,0 +1,16 @@
+.main-footer {
+	height: 500px;
+	
+}
+
+.main-footer__wrapper {
+	@include container();
+}
+
+@media #{$tablet} {
+	
+}
+
+@media #{$desktop} {
+	
+}

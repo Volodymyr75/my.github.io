@@ -1,0 +1,14 @@
+.s-children {
+
+}
+.s-children__wrapper {
+	@include container();
+}
+
+@media #{$tablet} {
+	
+}
+
+@media #{$desktop} {
+	
+}

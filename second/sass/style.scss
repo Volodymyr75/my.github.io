@@ -1,0 +1,20 @@
+
+@import "global/normalize.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/scaffolding.scss";
+@import "global/fonts.scss";
+@import "global/forms.scss";
+
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-button.scss";
+@import "blocks/common.scss";
+@import "blocks/s-about.scss";
+@import "blocks/s-parents.scss";
+@import "blocks/s-children.scss";
+@import "blocks/s-contacts.scss";
+@import "blocks/page-footer.scss";
