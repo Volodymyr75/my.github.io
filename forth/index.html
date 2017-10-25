@@ -65,7 +65,7 @@
 				            	</svg>
 							</a>
 						</li>
-						
+
 					</ul>
 					
 					
@@ -92,7 +92,7 @@
 				<h2 class="s-about__title">О нас</h2>
 			</header>
 			<div class="s-about__items">
-				<p class="s-about__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+				<p class="s-about__description">Lorem Ipsum - это текст-"рыба"<br class="line-break">, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
 				<p class="s-about__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
 				<div class="social-link social-link--fb"></div>
 			</div>
@@ -119,14 +119,31 @@
 				<h2 class="s-contacts__title">Напишите нам</h2>
 			</header>
 			<div class="s-contacts__items">
-				<form class="s-contacts__form" action="" method="post">
-					
+				<form class="form" action="" method="post">
+					<div class="form-group__wrapper">
+						<div class="form-group">
+						<input class="form-group__field" type="text" name="name" value="" id="name" required placeholder="Имя">
+						</div>
+						<div class="form-group">
+							<input class="form-group__field" type="email" name="email" value="" id="email" required placeholder="Эл.&nbsp;почта">
+						</div>
+						<div class="form-group">
+							<input class="form-group__field" type="text" name="phone" value="" id="phone" placeholder="Телефон">
+						</div>
+
+					</div>
+					<div class="form-group__wrapper">
+						<div class="form-group form-group--area">
+							<textarea class="form-group__field form-group__field--area"  name="message" value="" id="message" placeholder="Чем вам помочь?"></textarea>
+						</div>
+					</div>	
+					<input class="button" type="submit" value="Отправить">
 				</form>
 			</div>
 		</div>
 		
 	</section>
-	<footer class="main-footer">
+	<footer class="main-footer"> 
 		<div class="main-footer__wrapper">
 			
 		</div>
