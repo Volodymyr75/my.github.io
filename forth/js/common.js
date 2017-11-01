@@ -37,6 +37,21 @@ $(document).ready(function() {
 
 	$(".s-about__header, .s-parents__header, .s-children__header, .s-contacts__header").animated("fadeInUp", "fadeOutDown");
 
+
+
+
+
+
+$('.popup-gallery__hovered-content').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+
 	// $("#portfolio_grid").mixItUp();
 
 	// $(".s_portfolio li").click(function() {
@@ -66,12 +81,12 @@ $(document).ready(function() {
 	
 
 
-	$(".portfolio_item").each(function(i) {
-		$(this).find("a").attr("href", "#work_" + i);
-		$(this).find(".podrt_descr").attr("id", "work_" + i);
-	});
+	// $(".portfolio_item").each(function(i) {
+	// 	$(this).find("a").attr("href", "#work_" + i);
+	// 	$(this).find(".podrt_descr").attr("id", "work_" + i);
+	// });
 
-	$("input, select, textarea").jqBootstrapValidation();
+	// $("input, select, textarea").jqBootstrapValidation();
 
 	$(".top_mnu ul a").mPageScroll2id();
 
