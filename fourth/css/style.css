@@ -835,7 +835,7 @@ body {
 
 @media (max-width: 767px) {
   .page-header__logo {
-    width: auto;
+    width: 95%;
     margin: 0 1em; }
     .page-header__logo img {
       width: 100%;
