@@ -834,6 +834,12 @@ body {
     display: none; } }
 
 @media (max-width: 767px) {
+  .page-header__logo {
+    width: auto;
+    margin: 0 1em; }
+    .page-header__logo img {
+      width: 100%;
+      height: auto; }
   .main-nav__social {
     z-index: 100;
     position: fixed;
