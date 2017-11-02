@@ -727,7 +727,8 @@ body {
   height: auto; }
   .page-footer__logo img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    fill: green; }
 
 .page-footer__social {
   display: -webkit-box;
