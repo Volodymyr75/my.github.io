@@ -58,8 +58,8 @@ if (array_key_exists('name', $_POST)) {
 	    require 'PHPMailer/PHPMailerAutoload.php';
 
 	    $mail = new PHPMailer;
-	    $mail->setFrom('homer.strem@gmail.com', 'First Last');
-	    $mail->addAddress('strembov@gmail.com','John Doe');
+	    $mail->setFrom('example@gmail.com', 'First Last');
+	    $mail->addAddress('example@gmail.com','John Doe');
 	    $mail->Subject = 'PHPMailer file sender';
 	    $mail->setLanguage('ru', 'PHPMailer/language/');
 	    $mail->Body = <<<EOT
