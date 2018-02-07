@@ -1,0 +1,114 @@
+.s-testimon {
+	background-color: $th-bg-dark;
+	padding: 0 0 19vh;
+}
+.s-testimon__header {
+	margin: 0 auto 5.5vh;
+	z-index: 5;
+	width: fit-content;
+	position: relative;
+	top: -2.1vh;
+}
+.s-testimon__title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3.2vw;
+	color: $th-color-dark;
+	margin-bottom: 1.22vh;
+	margin-top: 0;
+	font-weight: 400;
+	@include kerning(2);
+}
+.s-testimon__decor {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.s-testimon__line {
+	width: 100%;
+	height: 0.26vh;
+	background-color: $th-color-blue;
+}
+.s-testimon__decor-svg {
+	
+	width: 1.58vw;
+	margin: 0 1.58vw;
+}
+.s-testimon__wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.s-testimon__box {
+	width: 23.7vw;
+}
+.s-testimon__img {
+	position: relative;
+	height: 12.8vw;
+}
+.s-testimon__quotes {
+	width: 2.3vw;
+	height: 2.8vw;
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 1.4vw);
+	left: 4.4vw;
+}
+.s-testimon__img-box {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 5.8vw);
+	width: 11.6vw;
+	height: 11.6vw;
+	border-radius: 11.6vw;
+	text-align: center;
+	overflow: hidden;
+}
+.s-testimon__name {
+	margin-bottom: 1.3vh;
+
+	p:first-child {
+		font-weight: bold;
+		font-size: 1.26vw;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	p:last-child {
+		font-style: italic;
+		font-size: 1.26vw;
+		margin-top: 0;
+		text-align: center;
+		color: rgba($th-color-dark, 0.8);
+	}
+}
+.s-testimon__text {
+	text-align: center;
+	
+}
+@media #{$mobile} {
+	
+	
+}			
+
+@media #{$tablet} {
+		
+	
+}
+
+
+@media #{$desktop-small} {
+	
+}
+
+@media #{$desktop} {
+	
+
+}

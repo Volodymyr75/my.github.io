@@ -1,0 +1,69 @@
+
+@mixin mobile {
+  @media #{$mobile} {
+    @content;
+  }
+}
+@mixin tablet {
+  @media #{$tablet} {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media #{$desktop-small} {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media #{$desktop} {
+    @content;
+  }
+}
+
+@mixin container {
+    width: 76vw; //ширина макета 1260  ширина контейнера 960, 960/1260*100
+  	max-width: 1170px;
+  	margin: 0 auto;
+    position: relative;
+ }
+
+@mixin kerning($kerning) {
+  letter-spacing: $kerning + px;
+}
+
+@mixin line-break {
+	display: none;
+	@include tablet {
+		display: inline;
+	}
+}
+
+@mixin theme-fonts {
+  // font-family: "Roboto", "Arial", sans-serif;
+
+  // text-transform: uppercase;
+}
+
+@mixin input-font {
+  // font-size: 18px;
+  // color: $bg-dark;
+ 
+//   font-size: inherit;
+//   color: inherit;
+//   text-transform: inherit;
+ }
+
+@mixin bg-img-center-contain {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin bg-img-center-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

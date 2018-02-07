@@ -1,0 +1,114 @@
+.form {
+	
+	&--consult {
+		width: 30vw;
+		
+		input {
+			background-color: $th-bg-dark;
+			border: none;
+			text-align: center;
+			width: 100%;
+			height: 6.8vh;
+			margin-bottom: 1.3vh;
+			color: $th-color-dark;
+			text-transform: uppercase;
+			
+			&::placeholder {
+				color: $th-color-dark;
+			}
+
+			&:focus::placeholder {
+				color: rgba($th-color-dark, 0.3);
+			}
+			
+		}
+	}
+
+	&--contact {
+		width: 30vw;
+		
+		input {
+			background-color: $th-bg-dark;
+			border: none;
+			text-align: center;
+			width: 100%;
+			height: 6.8vh;
+			margin-bottom: 1.3vh;
+			color: $th-color-dark;
+			text-transform: uppercase;
+			
+			&::placeholder {
+				color: $th-color-dark;
+			}
+
+			&:focus::placeholder {
+				color: rgba($th-color-dark, 0.3);
+			}
+		}	
+
+		textarea {
+			box-sizing: border-box;
+			background-color: $th-bg-dark;
+			border: none;
+			text-align: center;
+			width: 100%;
+			height: 21vh;
+			resize: none;
+			margin-bottom: 1.3vh;
+			color: $th-color-dark;
+			text-transform: uppercase;
+			
+			&::placeholder {
+				color: $th-color-dark;
+			}
+
+			&:focus::placeholder {
+				color: rgba($th-color-dark, 0.3);
+			}
+			
+		}
+	}
+
+	&--modal {
+			
+		input {
+			background-color: $th-bg-dark;
+			border: none;
+			text-align: center;
+			width: 100%;
+			height: 6.8vh;
+			margin-bottom: 1.3vh;
+			color: $th-color-dark;
+			text-transform: uppercase;
+			
+			&::placeholder {
+				color: $th-color-dark;
+			}
+
+			&:focus::placeholder {
+				color: rgba($th-color-dark, 0.3);
+			}
+			
+		}
+	}
+}
+
+@media #{$mobile} {
+	
+	
+}			
+
+@media #{$tablet} {
+		
+	
+}
+
+
+@media #{$desktop-small} {
+	
+}
+
+@media #{$desktop} {
+	
+
+}

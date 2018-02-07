@@ -1,0 +1,117 @@
+
+body {
+	
+	background-color: $th-bg-light;
+	font-family: Cotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.26vmax; //взяли ширину макета 1260 и размер шрифта 16, 16/1260*100, шрифт зависит от максимальной ширины экрана
+	line-height: 1.9vmax;
+	color: $th-color-dark;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	// vertical-align: bottom;
+}
+
+
+//обертка контейнер
+.wrapper {
+	@include container();
+	color: inherit;
+}
+
+// класс для скрытия текста, лучше делать так, а не через display: none;
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+// класс, делает перенос на больших экрананах, на мобильном отстутвует
+.line-break {
+	@include line-break;
+	
+}
+
+// очищаем стили списка
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.btn {
+	border: none;
+	font-size: inherit;
+	padding: 1.58vw 4.98vw;
+	&--blue {
+		color: $th-color-light;
+		background-color: $th-color-blue;
+		text-transform: uppercase;
+	}
+	&--form {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.modal-call {
+	position: fixed;
+	top: 20vh;
+	width: 50vw;
+	left: calc(50% - 25vw);
+	z-index: 51;
+}
+.modal-call__close {
+	width: 2vw;
+	height: 2vw;
+	position: absolute;
+	fill: $th-color-light;
+	top: -2vw;
+	right: -2vw;
+	cursor: pointer;
+	
+}
+.modal-call__content {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10%;
+	background-color: $th-bg-light;
+}
+.back-fill {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media #{$mobile} {
+	
+	
+}			
+
+@media #{$tablet} {
+		
+	
+}
+
+
+@media #{$desktop-small} {
+	
+}
+
+@media #{$desktop} {
+	
+
+}

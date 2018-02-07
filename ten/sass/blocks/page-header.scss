@@ -1,0 +1,123 @@
+.page-header {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	// background-image: url(../img/header-1.png);
+	padding-top: 7vh; //высоту паддинга в пикселях разделили на высоту условного экрана в макете равного 765 и умножили на 100
+	padding-bottom: 8vh;
+	color: $th-color-light;
+	animation: slideshow 10s linear infinite 0s;
+	backface-visibility: hidden;
+}
+@keyframes slideshow {
+	0%
+	{
+		background-image: url(../img/header-1.png);
+		animation-timing-function: ease-in-out;
+	}
+	50%
+	{
+		background-image: url(../img/header-2.png);
+		animation-timing-function: ease-in-out;
+	}
+	100%
+	{
+		background-image: url(../img/header-1.png);
+		animation-timing-function: ease-in-out;
+	}
+}
+.page-header__top {
+	height: 15vh;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.page-header__logo {
+	width: 15vh;
+}
+.page-header__order {
+	text-transform: uppercase;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.page-header__bottom {
+
+	&--fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 10vh;
+		z-index: 6;
+		opacity: 0.8;
+		transition: 0.25s ease-in-out;
+		background-color: $th-bg-light;
+		
+		&:hover {
+			opacity: 1;
+		}
+		nav {
+			height: inherit;
+
+			a {
+				color: $th-color-blue;
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+// , @media only screen and (max-width: 320px),
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+{
+	body {
+		font-size: 2.26vmax;
+		line-height: 2.9vmax;
+	}
+	.page-header {
+		padding: 5vh 0;
+	}
+	.page-header__top {
+		height: 90vh;
+		flex-flow: column;
+	}
+	.page-header__logo {
+		width: 35vh;
+	}	
+	.page-header__bottom {
+		display: none;
+	}
+
+}
+
+
+// @media #{$mobile} {
+	
+	
+// }			
+
+// @media #{$tablet} {
+		
+	
+// }
+
+
+// @media #{$desktop-small} {
+	
+// }
+
+// @media #{$desktop} {
+	
+
+// }

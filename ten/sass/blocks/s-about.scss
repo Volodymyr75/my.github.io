@@ -1,0 +1,63 @@
+.s-about {
+	width: 100%;
+	// height: 100vh;
+	box-sizing: border-box;
+	padding-top: 18vh;
+	padding-bottom: 22vh;
+}
+.s-about__wrapper {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+
+}
+.s-about__header {
+	width: 35vw;
+}
+.s-about__title {
+	text-transform: uppercase;
+	font-size: 3.2vw;
+	line-height: 4.2vw;
+	margin-top: 0;
+
+	span {
+		color: $th-color-blue;
+	}
+}
+.s-about__description {
+	width: 44vw;
+	padding-right: 1.5vw;
+	
+	p {
+		margin: 1.18vh 0;
+	}
+	ul {
+		width: 30vw;
+		margin: 6vh 0;
+
+		li {
+			margin-bottom: 1.15vh;
+		}
+	}
+}
+@media #{$mobile} {
+	
+	
+}			
+
+@media #{$tablet} {
+		
+	
+}
+
+
+@media #{$desktop-small} {
+	
+}
+
+@media #{$desktop} {
+	
+
+}

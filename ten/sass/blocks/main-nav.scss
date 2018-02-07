@@ -1,0 +1,43 @@
+	
+.main-nav {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $th-color-light;
+
+	&:hover {
+		color: $th-color-blue;
+	}
+}
+
+@media #{$mobile} {
+	
+	.main-nav__items {
+		//добавляем к медиавыражению еще и ориентацию экрана
+		@media (orientation:landscape) {
+			margin-top: 50px;
+		}
+	}
+	
+}			
+
+@media #{$tablet} {
+	
+	
+	
+}
+
+
+@media #{$desktop-small} {
+	
+}
+
+@media #{$desktop} {
+	
+
+}

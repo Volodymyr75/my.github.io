@@ -1,0 +1,71 @@
+.s-contact {
+	background-color: $th-bg-light;
+	padding: 0 0 19vh;
+}
+.s-contact__header {
+	margin: 0 auto 5.5vh;
+	z-index: 5;
+	width: fit-content;
+	position: relative;
+	top: -2.1vh;
+}
+.s-contact__title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3.2vw;
+	color: $th-color-dark;
+	margin-bottom: 1.22vh;
+	margin-top: 0;
+	font-weight: 400;
+	@include kerning(2);
+}
+.s-contact__decor {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.s-contact__line {
+	width: 100%;
+	height: 0.26vh;
+	background-color: $th-color-blue;
+}
+.s-contact__decor-svg {
+	
+	width: 1.58vw;
+	margin: 0 1.58vw;
+}
+
+.s-contact__wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.s-contact__list {
+	width: 23.7vw;
+}
+.s-contact__item {
+	padding-bottom: 5.6vh;
+	font-size: 1.9vw;
+}
+@media #{$mobile} {
+	
+	
+}			
+
+@media #{$tablet} {
+		
+	
+}
+
+
+@media #{$desktop-small} {
+	
+}
+
+@media #{$desktop} {
+	
+
+}
