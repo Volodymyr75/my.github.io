@@ -10,12 +10,17 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	// background-image: url(../img/header-1.png);
+	background-image: url(../img/header-1.png);
 	padding-top: 7vh; //высоту паддинга в пикселях разделили на высоту условного экрана в макете равного 765 и умножили на 100
 	padding-bottom: 8vh;
 	color: $th-color-light;
 	animation: slideshow 10s linear infinite 0s;
 	backface-visibility: hidden;
+
+	@media #{$mobile} {
+		height: 92vh;
+		padding: 10vh 0;
+	}
 }
 @keyframes slideshow {
 	0%
@@ -35,15 +40,21 @@
 	}
 }
 .page-header__top {
-	height: 15vh;
+	// height: 15vh;
 	overflow: hidden;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+
+	@media #{$mobile} {
+		height: 100%;
+		flex-flow: column;
+	}
 }
 .page-header__logo {
-	width: 15vh;
+	// width: 15vh;
+	display: flex;
 }
 .page-header__order {
 	text-transform: uppercase;
@@ -74,50 +85,10 @@
 			}
 		}
 	}
-}
 
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
-// , @media only screen and (max-width: 320px),
-// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
-{
-	body {
-		font-size: 2.26vmax;
-		line-height: 2.9vmax;
-	}
-	.page-header {
-		padding: 5vh 0;
-	}
-	.page-header__top {
-		height: 90vh;
-		flex-flow: column;
-	}
-	.page-header__logo {
-		width: 35vh;
-	}	
-	.page-header__bottom {
+	@media #{$mobile} {
 		display: none;
 	}
 
 }
 
-
-// @media #{$mobile} {
-	
-	
-// }			
-
-// @media #{$tablet} {
-		
-	
-// }
-
-
-// @media #{$desktop-small} {
-	
-// }
-
-// @media #{$desktop} {
-	
-
-// }

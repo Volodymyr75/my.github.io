@@ -13,7 +13,7 @@
 
 }
 .page-footer__logo {
-	width: 9vw;
+	// width: 9vw;
 }
 .page-footer__copy {
 	position: absolute;
@@ -21,23 +21,8 @@
 	width: 100%;
 	bottom: 9.1vh;
 	text-align: center;
-}
-@media #{$mobile} {
-	
-	
-}			
 
-@media #{$tablet} {
-		
-	
-}
-
-
-@media #{$desktop-small} {
-	
-}
-
-@media #{$desktop} {
-	
-
+	@media #{$mobile} {
+		font-size: 2.26vmax;	
+	}
 }

@@ -8,6 +8,10 @@
 	width: fit-content;
 	position: relative;
 	top: -2.1vh;
+
+	@media #{$mobile} {
+		top: -1vh;
+	}
 }
 .s-consult__title {
 	text-transform: uppercase;
@@ -18,6 +22,11 @@
 	margin-top: 0;
 	font-weight: 400;
 	@include kerning(2);
+
+	@media #{$mobile} {
+		font-size: 5vmax;
+		margin-bottom: 2vmax;
+	}
 }
 .s-consult__decor {
 	display: flex;
@@ -34,7 +43,7 @@
 }
 .s-consult__decor-svg {
 	
-	width: 1.58vw;
+	display: flex;
 	margin: 0 1.58vw;
 }
 .s-consult__wrapper {
@@ -42,9 +51,18 @@
 	flex-wrapper: nowrap;
 	justify-content: space-between;
 	align-items: flex-start;
+
+	@media #{$mobile} {
+		flex-direction: column;
+	}
 }
 .s-consult__description {
 	width: 36.36vw;
+
+	@media #{$mobile} {
+		width: 100%;
+		padding-bottom: 3vw;
+	}
 }
 .s-consult__title-h3 {
 	font-size: 2.52vw;
@@ -52,23 +70,12 @@
 	margin-top: 0;
 	margin-bottom: 6.5vh;
 	font-weight: 400;
-}
-@media #{$mobile} {
-	
-	
-}			
 
-@media #{$tablet} {
-		
-	
+	@media #{$mobile} {
+		font-size: 4.52vw;
+		line-height: 5.84vw;
+		margin-bottom: 3.5vh;
+		font-weight: bold;
+	}
 }
 
-
-@media #{$desktop-small} {
-	
-}
-
-@media #{$desktop} {
-	
-
-}

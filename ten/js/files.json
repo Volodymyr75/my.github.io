@@ -1,0 +1,22 @@
+{
+	"files": [
+		{
+			"type":"SCRIPT",
+			"source":"../js/common.js",
+			"size":4.096
+		},
+		{
+			"type":"SCRIPT",
+			"source":"../libs/slick/slick.min.js",
+			"size":4.096
+		},
+		{
+			"type":"CSS",
+			"source":"../libs/slick/slick-theme.css"
+		},
+		{
+			"type":"CSS",
+			"source":"../libs/slick/slick.css"
+		}
+	]
+}

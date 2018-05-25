@@ -8,6 +8,10 @@
 	width: fit-content;
 	position: relative;
 	top: -2.1vh;
+
+	@media #{$mobile} {
+		top: -1vh;
+	}
 }
 .s-testimon__title {
 	text-transform: uppercase;
@@ -18,6 +22,11 @@
 	margin-top: 0;
 	font-weight: 400;
 	@include kerning(2);
+
+	@media #{$mobile} {
+		font-size: 5vmax;
+		margin-bottom: 2vmax;
+	}
 }
 .s-testimon__decor {
 	display: flex;
@@ -34,7 +43,7 @@
 }
 .s-testimon__decor-svg {
 	
-	width: 1.58vw;
+	display: flex;
 	margin: 0 1.58vw;
 }
 .s-testimon__wrapper {
@@ -48,15 +57,12 @@
 .s-testimon__img {
 	position: relative;
 	height: 12.8vw;
+
+	@media #{$mobile} {
+		height: 35vw;
+	}
 }
-.s-testimon__quotes {
-	width: 2.3vw;
-	height: 2.8vw;
-	position: absolute;
-	z-index: 1;
-	top: calc(50% - 1.4vw);
-	left: 4.4vw;
-}
+
 .s-testimon__img-box {
 	display: flex;
 	flex-wrap: nowrap;
@@ -71,6 +77,13 @@
 	border-radius: 11.6vw;
 	text-align: center;
 	overflow: hidden;
+
+	@media #{$mobile} {
+		left: calc(50% - 15vw);
+		width: 30vw;
+		height: 30vw;
+		border-radius: 30vw;
+	}
 }
 .s-testimon__name {
 	margin-bottom: 1.3vh;
@@ -80,6 +93,11 @@
 		font-size: 1.26vw;
 		margin-bottom: 0;
 		text-align: center;
+
+		@media #{$mobile} {
+			font-size: 4.26vw;
+			margin-bottom: 2vw;
+		}
 	}
 	p:last-child {
 		font-style: italic;
@@ -87,28 +105,12 @@
 		margin-top: 0;
 		text-align: center;
 		color: rgba($th-color-dark, 0.8);
+
+		@media #{$mobile} {
+			font-size: 4.26vw;
+		}
 	}
 }
 .s-testimon__text {
-	text-align: center;
-	
-}
-@media #{$mobile} {
-	
-	
-}			
-
-@media #{$tablet} {
-		
-	
-}
-
-
-@media #{$desktop-small} {
-	
-}
-
-@media #{$desktop} {
-	
-
+	text-align: center;	
 }
